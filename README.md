@@ -1,13 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 💼 Sushil Sharma -Portfolio
 
-Currently, two official plugins are available:
+This is my personal portfolio website built with **ReactJS** and **Tailwind CSS**. It showcases my skills, projects, and ways to contact me. Designed with animations, clean layout, and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Portfolio
+- ⚛️ ReactJS
+- 💨 Tailwind CSS
+- 📦 React Icons / Custom Components
+
+---
+
+## 🔧 Features
+
+- ✅ Dynamic typing text animation
+- ✅ Smooth scrolling and routing
+- ✅ Responsive design (mobile-friendly)
+- ✅ Colorful animations & Tailwind transitions
+- ✅ Contact form that connects to Gmail
+- ✅ Downloadable resume/CV
+- ✅ Modular file structure
+
+---
+
+## 📁 Project Structure
+
+```
+react-portfolio/
+├── public/
+│   └── sushilcv.pdf
+├── src/
+│   ├── component/
+│   │   ├── Navbar.jsx
+│   │   ├── Project.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Typing.jsx
+│   │   └── ...
+│   ├── page/
+│   │   └── Home.jsx
+│   └── App.jsx
+├── package.json
+└── README.md
+```
+
+---
+
+## 💌 Contact
+
+📧 Email: [susilsharma7257@gmail.com]  
+
+
+> Built with ❤️ by Sushil Sharma
