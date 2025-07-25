@@ -7,7 +7,7 @@ import Contact from './Contact'
 
 
 
-const TypingText = ({ text, speed = 100 }) => {
+const TypingText = ({ text="Frontend Developer and  UX/UI Designer ", speed = 100 }) => {
   const [displayedLetters, setDisplayedLetters] = useState([]);
 
   const colors = [
@@ -22,20 +22,23 @@ const TypingText = ({ text, speed = 100 }) => {
     
   ];
 
-  useEffect(() => {
-    let index = 0;
+useEffect(() => {
+  let index = 0;
+  const interval = setInterval(() => {
+    if (index < text.length) {
+      const currentChar = text.charAt(index);
+      setDisplayedLetters((prev) => [...prev, currentChar]);
+      index++;
+    } else {
+      console.log('Typing complete.');
+      clearInterval(interval);
+    }
+  }, speed);
 
-    const interval = setInterval(() => {
-      if (index < text.length) {
-        setDisplayedLetters((prev) => [...prev , text.charAt(index)]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, speed);
+  return () => clearInterval(interval);
+}, [text, speed]);
 
-    return () => clearInterval(interval);
-  }, [text, speed]);
+
 
   return (
     <h1 className="text-3xl font-bold flex flex-wrap">
@@ -70,7 +73,7 @@ const Home = ()=> {
           
           </div>
           <div className="text-2xl md:text-3xl text-cyan-200 mb-2">
-            <div classname="h-15">
+            <div className="h-15">
             <TypingText text="Frontend Developer and  UX/UI Designer " speed={100}/></div>
           </div> 
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
