@@ -72,9 +72,9 @@ const Home = ()=> {
             <span className="neon-text">Sushil Sharma</span><br />
           
           </div>
-          <div className="text-2xl md:text-3xl text-cyan-200 mb-2">
-            <div className="h-15">
-            <TypingText text="Frontend Developer and  UX/UI Designer " speed={100}/></div>
+          <div className="text-1xl md:text-2xl text-cyan-200 mb-1">
+            <div className="h-13">
+            <TypingText  className="flex flex-col md:flex-row gap-6 justify-center items-center" text="Frontend Developer and  UX/UI Designer " speed={100}/></div>
           </div> 
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
            <a href="sushilcv.pdf"> <button  type="download" className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
@@ -88,15 +88,15 @@ const Home = ()=> {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-10 ">
             <div className="border-2 border-cyan-400 p-6 rounded-lg hover:bg-blue-800 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-              <div className="orbitron text-4xl font-bold neon-text mb-2 ">0.5+</div>
+              <div className="orbitron text-2xl font-bold neon-text mb-2 ">0.5+</div>
               <div className="text-cyan-200">Years Experience</div>
             </div>
             <div className="border-2 border-cyan-400 p-6 rounded-lg hover:bg-blue-800 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-              <div className="orbitron text-4xl font-bold neon-text mb-2">7+</div>
+              <div className="orbitron text-2xl font-bold neon-text mb-2">7+</div>
               <div className="text-cyan-200">Projects Done</div>
             </div>
             <div className="border-2 border-cyan-400 p-6 rounded-lg hover:bg-blue-800 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-              <div className="orbitron text-4xl font-bold neon-text mb-2">90%</div>
+              <div className="orbitron text-2xl font-bold neon-text mb-2">90%</div>
               <div className="text-cyan-200">Success Rate</div>
             </div>
           </div>

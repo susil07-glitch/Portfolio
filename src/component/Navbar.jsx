@@ -3,8 +3,12 @@ import { Link } from 'react-router'
 import Home from './Home'
 import Project from './Project'
 import Contact from './Contact'
+import { useState } from 'react'
 
 const Navbar = () => {
+
+   const[isOpen,setIsOpen]=useState(false);
+
   return (
   <div>
     <meta charSet="UTF-8" />
@@ -29,7 +33,7 @@ const Navbar = () => {
     <div className="floating-orb w-20 h-20 top-2/3 right-1/3" style={{animationDelay: '1s'}} />
     {/* Navigation */}
     <nav className="fixed top-0 w-full z-50 bg-cyan-700 ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-5 lg:px-6">
         <div className="flex items-center justify-between h-12">
         <a href="#"><button> <div className="orbitron text-2xl font-bold black-text">
             &lt;SS.CODE/&gt;
@@ -41,11 +45,11 @@ const Navbar = () => {
             <a href="#skills" className="hover:text-cyan-400 transition-all duration-300 relative group">SKILLS<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></a>
             <Link to="/project" className="hover:text-cyan-400 transition-all duration-300 relative group">PROJECTS<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></Link>
             <Link to="/contact" className="hover:text-cyan-400 transition-all duration-300 relative group">CONTACT<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></Link>
-          </div>
-          <button id="mobile-menu" className="md:hidden text-2xl">≡</button>
+          </div>       
+              <button onClick={() => setIsOpen(isOpen)}  id="mobile-menu" className="md:hidden text-3xl">≡</button>
         </div>
       </div>
-      <div id="mobile-nav" className="md:hidden hidden hologram">
+      <div  id="mobile-nav" className="md:hidden hidden hologram">
         <div className="px-6 py-4 space-y-4">
           <Link to="/" className="block hover:text-cyan-400 transition-colors">HOME</Link>
           <a href="#about" className="block hover:text-cyan-400 transition-colors">ABOUT</a>
