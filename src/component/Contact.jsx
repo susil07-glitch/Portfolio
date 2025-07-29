@@ -1,6 +1,28 @@
   import React, { useRef } from 'react';
+  import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Navbar from './Navbar';
+
+
+
+const FadeInSection = ({ children, delay = 0 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+
+
 const Contact = () => {
 
   const form = useRef();
@@ -32,6 +54,7 @@ const Contact = () => {
           <h2 className="orbitron text-5xl font-bold neon-text mb-4">CONTACT</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto" />
         </div>
+        <FadeInSection delay={0.4}>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="fade-">
             <h3 className="text-2xl font-bold text-cyan-300 mb-8">Get In Touch</h3>
@@ -156,7 +179,9 @@ const Contact = () => {
 
           </div>
         </div>
+         </FadeInSection>
       </div>
+     
     </section>
     </div>
   )
