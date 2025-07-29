@@ -10,6 +10,31 @@ const Project = () => {
     navigate('/'); // this takes you to the homepage
   };
 
+
+  // for scrolling effect in the section //
+
+
+
+//   const FadeInSection = ({ children, delay = 0 }) => {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref, { once: true });
+
+//   return (
+//     <motion.div
+//       ref={ref}
+//       initial={{ opacity: 0, y: 50 }}
+//       animate={isInView ? { opacity: 1, y: 0 } : {}}
+//       transition={{ duration: 0.8, delay }}
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
+
+
+
+// main content to display in the project section //
+
   return (
     
   <div>
@@ -68,6 +93,7 @@ const Project = () => {
           <h2 className="orbitron text-5xl font-bold neon-text mb-4">PROJECTS</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto" />
         </div>
+        {/* <FadeInSection delay={0.4}> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="project-card p-6 rounded-lg fade-">
             <div className="relative mb-4 overflow-hidden rounded-lg">
@@ -75,14 +101,14 @@ const Project = () => {
             </div>
             <h3 className="text-xl font-bold text-cyan-300 mb-2">Mini-DataBase In C</h3>
             <p className="text-gray-400 mb-4">A simple console-based mini database system written in C. It allows users to add, view, search, and delete student records using binary file handling.
-</p>
+              </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 text-sm rounded-full">C-Language</span>
              
             </div>
             <button className="w-full hologram py-2 text-cyan-400 hover:text-white transition-colors">VIEW PROJECT</button>
           </div>
-       {/* project 2 */}
+          {/* project 2 */}
            <div className="project-card p-6 rounded-lg fade-">
             <div className="relative mb-4 overflow-hidden rounded-lg">
               <img src="/TICTACTOE.png"alt="Real-time Collaboration Tool" className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110" />
@@ -124,7 +150,9 @@ const Project = () => {
             </div>
             <button className="w-full hologram py-2 text-cyan-400 hover:text-white transition-colors">VIEW PROJECT</button>
           </div>
+          
         </div>
+        {/* </FadeInSection> */}
       </div>
     </section>
     <Footer/>
