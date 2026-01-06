@@ -7,6 +7,8 @@ import Project from "./component/Project"
 import Contact from "./component/Contact"
 import Navbar from "./component/Navbar"
 import Home from "./component/Home"
+import About from "./component/About"
+import Skill from "./component/Skill"
 
 
 const App = () => {
@@ -18,7 +20,9 @@ const App = () => {
        
         <Route path="/project" element={<Project/>}></Route>
         <Route path="/Contact" element={<Contact/>}></Route>
-
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/skill" element={<Skill/>}></Route>
+        
 
       </Routes>
       

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
 import { motion,useInView } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
 
@@ -64,35 +65,68 @@ const HeroSection = () => {
     <section  className="min-h-screen flex items-center justify-center relative z-10 pt-20">
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center space-y-8">
-          <div className="relative inline-block mb-12">
-            <div className="pulse-ring w-80 h-80" />
-            <div className="pulse-ring w-80 h-80" style={{animationDelay: '2s'}} />
-            <div className="relative w-80 h-80 mx-auto hologram rounded-full overflow-hidden">
-              <img src="/sushil.jpeg" alt="ss.code" className="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div className="orbitron text-4xl md:text-4xl font-cursive mb-4">
-            <span className="neon-text">Sushil Sharma</span><br />
-          
-          </div>
-          <div className="text-1xl md:text-2xl text-cyan-200 mb-1">
-            <div className="h-13">
-            <TypingText  className="flex flex-col md:flex-row gap-6 justify-center items-center" text="Frontend Developer " speed={100}/></div>
-          </div> 
-          <FadeInSection delay={0.4}>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-           <a href="sushilcv.pdf"> <button  type="download" className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-              DOWNLOAD CV
-            </button></a>
-           <button className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
-              VIEW PROJECTS
-            </button>
+        <div className=" text-center space-y-8">
+
+          <div className="frontline flex ">
+            <div className="intro mt-20">
+                <div className="orbitron text-4xl md:text-4xl font-cursive mb-4">
+                    <span className="neon-text">
+                        Hi 👋 , i'm Sushil 
+
+                    </span>
+                </div>
+                <div className="text-2xl md:text-2xl text-cyan-500 mb-1">
+                    <div className="h-13 font-bold">
+
+                    I am   {' '}
+                        <Typewriter
+                        words={['Frontend Developer ','Tech Innovator ','React- Developer']}
+                        loop={2}
+                        cursor
+                        cursorStyle=".."
+                        typeSpeed={60}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        />
+
+                    </div>
+             
+                </div>
+                <FadeInSection delay={0.8}>
+                        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                              <a href="sushilcv.pdf"> 
+                                    <button  type="download" className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
+                                           DOWNLOAD CV
+                                    </button>
+                               </a>
+                                    <button className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
+                                             VIEW PROJECTS
+                                    </button>
+            
+                        </div>
+                </FadeInSection>
+            </div> 
+
+                <FadeInSection delay={0.6}>
+                     <div className="relative mx-90 inline-block  mt-15 ">
+                         <div className="pulse-ring w-90 h-90" />
+                             <div className="pulse-ring w-90 h-90" style={{animationDelay: '2s'}} />
+                                <div className="relative w-90 h-90 mx-auto hologram rounded-full overflow-hidden">
+                                    <img src="/susil22.png" alt="ss.code" className="w-full h-full object-cover" />
+                                </div>
+                             </div>
+                </FadeInSection>
+
             
           </div>
+
+
+
+
+
           {/* Stats */}
-          
-          <div className="grid grid-cols-3 gap-8 mt-10 ">
+          <FadeInSection delay={0.3}>
+          <div className="grid grid-cols-3 gap-8 mt-40 ">
             <div className="border-2 border-cyan-400 p-6 rounded-lg hover:bg-blue-800 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
               <div className="orbitron text-2xl font-bold neon-text mb-2 ">0.5+</div>
               <div className="text-cyan-200">Years Experience</div>

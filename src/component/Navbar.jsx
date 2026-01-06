@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import Home from './Home'
 import Project from './Project'
 import Contact from './Contact'
+import Skill from './Skill'
 
 const Navbar = () => {
 
@@ -41,7 +42,7 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <a href="#" className="hover:text-cyan-400 transition-all duration-300 relative group">HOME<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></a>
             <a href="#about" className="hover:text-cyan-400 transition-all duration-300 relative group">ABOUT<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></a>
-            <a href="#skills" className="hover:text-cyan-400 transition-all duration-300 relative group">SKILLS<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></a>
+            <a href="#skill"  className="hover:text-cyan-400 transition-all duration-300 relative group">SKILLS<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></a>
             <Link to="/project" className="hover:text-cyan-400 transition-all duration-300 relative group">PROJECTS<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></Link>
             <Link to="/contact" className="hover:text-cyan-400 transition-all duration-300 relative group">CONTACT<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300" /></Link>
           </div>       
