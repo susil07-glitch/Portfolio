@@ -78,7 +78,6 @@ const HeroSection = () => {
                 <div className="text-2xl md:text-2xl text-cyan-500 mb-1">
                     <div className="h-13 font-bold">
 
-                    I am   {' '}
                         <Typewriter
                         words={['Frontend Developer ','Tech Innovator ','React- Developer']}
                         loop={2}
@@ -92,8 +91,12 @@ const HeroSection = () => {
                     </div>
              
                 </div>
+             <div className="aboutIntro text-2xl font-light text-white">
+                   A Passionate Frontend Developer who enjoys building clean and intuitive web applications.<br/> I love working with React and modern UI tools to create experiences that users actually enjoy using.
+    
+             </div>
                 <FadeInSection delay={0.8}>
-                        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                        <div className="flex flex-col md:flex-row gap-6 justify-center items-center mt-10">
                               <a href="sushilcv.pdf"> 
                                     <button  type="download" className="border-2 border-cyan-400 px-12 py-4 text-xl font-poppins text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105">
                                            DOWNLOAD CV
@@ -105,10 +108,11 @@ const HeroSection = () => {
             
                         </div>
                 </FadeInSection>
-            </div> 
+            </div>
 
+            
                 <FadeInSection delay={0.6}>
-                     <div className="relative mx-90 inline-block  mt-15 ">
+                     <div className="relative mx-90 inline-block  mt-10 ">
                          <div className="pulse-ring w-90 h-90" />
                              <div className="pulse-ring w-90 h-90" style={{animationDelay: '2s'}} />
                                 <div className="relative w-90 h-90 mx-auto hologram rounded-full overflow-hidden">
