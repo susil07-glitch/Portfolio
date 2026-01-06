@@ -89,7 +89,7 @@ const Home = ()=> {
           </div>
           <div className="text-1xl md:text-2xl text-cyan-200 mb-1">
             <div className="h-13">
-            <TypingText  className="flex flex-col md:flex-row gap-6 justify-center items-center" text="Frontend Developer and  UX/UI Designer " speed={100}/></div>
+            <TypingText  className="flex flex-col md:flex-row gap-6 justify-center items-center" text="Frontend Developer " speed={100}/></div>
           </div> 
           <FadeInSection delay={0.4}>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
